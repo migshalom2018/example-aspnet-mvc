@@ -5,7 +5,7 @@
  
  El tiempo estimado de esta prueba es de 2 horas, y contara a partir de la generacion del repositorio en sus debidas cuentas. 
  
- Si su prueba asignada es de caracter remoto favor generar una base de datos en MS Sql Server, y generar la base siguiendo el script que se encuentra en BackupBD.bak
+ Si su prueba asignada es de caracter remoto favor generar una base de datos en MS Sql Server, y generar la base siguiendo el script que se encuentra en ComicBookGallery/BackupBD.bak
 
 ![screenshot1](https://github.com/sarn1/example-aspnet-mvc/blob/master/screenshot1.png)
 
