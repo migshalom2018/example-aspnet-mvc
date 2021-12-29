@@ -1,7 +1,9 @@
 ﻿# Prueba técnica Labovida
  
  La siguiente prueba consta de una aplicacion web realizada en Aspnet MVC para la selección de comics, se deberá realizar el fork del 
- repositorio en sus cuentas de github y clonarlas en sus respectivos ambientes.
+ repositorio en sus cuentas de github y clonarlas en sus respectivos ambientes, además se debe de crear un documento Word con capturas que reflejen el resultado de todos los   puntos al correo sistemas@grupolabovida.com
+ 
+ El tiempo estimado de esta prueba es de 2 horas, y contara a partir de la generacion del repositorio en sus debidas cuentas. 
  
  Si su prueba asignada es de caracter remoto favor generar una base de datos en MS Sql Server, y generar la base siguiendo el script que se encuentra en BackupBD.bak
 
