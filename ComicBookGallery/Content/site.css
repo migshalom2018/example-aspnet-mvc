@@ -42,3 +42,6 @@ textarea {
 .series-list li:last-child{
   border: none;
 }
+p {
+    color: #034af3;
+}

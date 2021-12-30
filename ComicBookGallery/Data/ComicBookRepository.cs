@@ -73,6 +73,22 @@ namespace ComicBookGallery.Data
                     new Artist() { Name = "Jeff Smith", Role = "Letters" }
                 },
                 Favorite = false
+            },
+            new ComicBook()
+            {
+                Id = 4,
+                SeriesTitle = "Deadpool Black, White & Blood",
+                IssueNumber = 356,
+                DescriptionHtml = "<p>YOUR CUP RUNNETH OVER! WITH BLOOD! Jay Baruchel & Paco Medina are bringing you a story so insane we refuse to even talk about it! Frank Tieri & Takashi Okazaki are gonna give you some sweet Deadpool VS. Bullseye! Stan Sakai tells the age-old parable </p>",
+                Artists = new Artist[]
+                {
+                    new Artist() { Name = "Jay Baruchel", Role = "Script" },
+                    new Artist() { Name = "Paco Medina", Role = "Pencils" },
+                    new Artist() { Name = "Victor Olazaba", Role = "Inks" },
+                    new Artist() { Name = "Kev Walker", Role = "Colors" },
+                    new Artist() { Name = "Stan Sakai", Role = "Letters" },
+                },
+                Favorite = false
             }
         };
     }

@@ -3,8 +3,10 @@ using ComicBookGallery.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.IO;
 
 namespace ComicBookGallery.Controllers
 {
@@ -21,7 +23,7 @@ namespace ComicBookGallery.Controllers
         // index - list page
         public ActionResult Index()
         {
-            var comicBooks = _comicBookRepository.GetComicBooks();
+            var comicBooks = _comicBookRepository.GetComicBooks().OrderBy(x => x.SeriesTitle).ToList(); ;
             return View(comicBooks);
         }
 
@@ -52,6 +54,17 @@ namespace ComicBookGallery.Controllers
             //    Content = "This is a test."
             //};
             return Content("This is a test.");
+        }
+
+        public FileResult downloadPdf()
+        {
+            string fileName = System.IO.Path.GetTempPath() + "los_vengadores_acoso_nunca_mas_marvel_panini_is4k.pdf";
+            
+            using (var client = new WebClient())
+            {
+                client.DownloadFile(@"https://www.is4k.es/sites/default/files/contenidos/los_vengadores_acoso_nunca_mas_marvel_panini_is4k.pdf", fileName);                
+            }
+            return File(fileName, "application/pdf");
         }
     }
 }
